@@ -18,7 +18,7 @@ addBtn.addEventListener("click", () => {
     let checkSpam2 = checkSpam1.replace(new RegExp("viagra", 'g'), "***");
     let checkSpam3 = checkSpam2.replace(new RegExp("xxx", 'g'), "***");
     if(!commentField.value) return;
-    const newComment = createComment(checkSpam3);
+    createComment(checkSpam3);
     //console.log(commentContainer);
     //commentContainer.innerHTML = commentContainer.innerHTML + newComment;
     commentField.value = "";
